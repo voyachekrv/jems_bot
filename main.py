@@ -44,7 +44,6 @@ def start_process(chat_id):
 
 
 def get_day_status():
-
     """
     Получение статуса текущего дня
     :return: Статус дня - выходной / рабочий / сокращённый

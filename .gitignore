@@ -27,6 +27,8 @@ MANIFEST
 
 celerybeat-schedule
 
+*.spec
+
 .env
 .venv
 env/
