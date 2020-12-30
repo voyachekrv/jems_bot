@@ -8,6 +8,19 @@ import schedule
 import telebot
 from dotenv import load_dotenv
 
+# Создание файла переменных окружения для ввода API-токена
+if not os.path.exists('./.env'):
+    while True:
+        api_token = input('API-токен бота: ')
+        if api_token != '':
+            break
+        else:
+            print('Некорректный API-токен')
+
+    env_file = open('.env', 'w')
+    env_file.write(f'API_TOKEN={api_token}')
+    env_file.close()
+
 load_dotenv()
 
 # API-токен бота (извлекается из файла переменных окружения)
